@@ -1,0 +1,72 @@
+Creando un nuevo Pais usando POST sobre: /paises
+[POST] http://localhost:3001/paises Body(x) raw (x) JSON (application/json)
+
+{
+	"codpais": "ARG",
+	"nombpais": "Argentina",
+	"prefpais": 54,
+	"continente": "AMERICA",
+	"estados": [
+		{
+			"codestado": "CABA",
+			"nombestado": "Ciudad de Buenos Aires",
+			"localidades": [
+				{
+					"codlocalidad": "ALG",
+					"nomblocalidad": "Almagro"
+				},{
+					"codlocalidad": "VCP",
+					"nomblocalidad": "Villa Crespo"
+				}
+			]
+		},{
+			"codestado": "BSAS",
+			"nombestado": "Buenos Aires",
+			"localidades": [
+				{
+					"codlocalidad": "RMJ",
+					"nomblocalidad": "Ramos Mejia"
+				},{
+					"codlocalidad": "MRN",
+					"nomblocalidad": "Morón"
+				}
+			]
+		}
+	]
+}
+---
+{
+	"codpais": "BRA",
+	"nombpais": "Brasil",
+	"prefpais": 55,
+	"continente": "AMERICA",
+	"estados": [
+		{
+			"codestado": "SNP",
+			"nombestado": "San Pablo",
+			"localidades": []
+		},{
+			"codestado": "RDJ",
+			"nombestado": "Rio de Janeiro",
+			"localidades": []
+
+		}
+	]
+}
+---
+
+
+Recuperando todos los Paises usando GET sobre: /paises
+[GET] http://localhost:3001/paises
+
+
+Recuperando un solo Pais usando GET sobre: /paises/:paisId
+[GET] http://localhost:3001/paises/5d1e3b5a17d8f5002a1eed29
+
+
+Actualizando un Pais usando PUT sobre: /paises/:paisId
+[PUT] http://localhost:3001/paises/5d1e3b5a17d8f5002a1eed29
+
+
+Borrando un Pais usando DELETE sobre: /paises/:paisId
+[DELETE] http://localhost:3001/pais/5d1e3e1217d8f5002a1eed31

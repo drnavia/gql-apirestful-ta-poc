@@ -1,0 +1,28 @@
+{
+	"name": "api-restful-poc-graphql",
+	"version": "1.0.0",
+	"description": "API RESTful",
+	"main": "server.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "nodemon ./app/server.js"
+	},
+	"keywords": [
+		"Node",
+		"Express",
+		"RestAPI",
+		"RESTful",
+		"MongoDB",
+		"Mongoose"
+	],
+	"author": "Damian Navia",
+	"license": "ISC",
+	"dependencies": {
+		"body-parser": "^1.18.3",
+		"express": "^4.16.3",
+		"mongoose": "^5.6.0"
+	},
+	"devDependencies": {
+		"nodemon": "^1.19.1"
+	}
+}
